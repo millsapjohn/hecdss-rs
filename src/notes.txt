@@ -1,0 +1,41 @@
+singletons are in the range 00-7F
+lead units are in the range C2-F4
+	C2-DF: one trail unit
+	E0-EF: two trail units
+	F0-F4: three trail units
+trail units are in the range 80-BF
+
+
+0  - ZDSS, DSS Identifier (string, "DSS")
+1  - Number of records
+2  - Catalog sequence number
+3  - File hash size index
+4  - DSS Version (string, "6-YN")
+5  - File size, words
+6  - Dead space, words
+7  - File creation date (string)
+8  - Last written date (string)
+9  - Last written time (string)
+10 - Address of tag-hash block
+11 - Maximum hash value
+12 - Hash table flag (1 - table used)
+13 - Number of pathname bins per block
+14 - Number of bins remaining in current block
+15 - Size of pathname bin, words
+16 - Address of first pathname bin
+17 - Address of next pathname bin
+18 - Record tag scheme
+19 - Number of pathname bins used
+20 - Number of hash codes used
+21 - Number of full bins
+22 - Maximum number of pathnames for one hash codes
+23 - Hash code for the maximum number
+24 - address of compression specifications
+25 - Length of compression specifications
+26 - Irregular time series block increment
+27 - Minimum size for ITS day block
+28 - Minimum size for ITS month block
+29 - Minimum size for ITS year block
+30 - Minimum size for ITS decade block
+31 - Minimum size for ITS century block
+32 - File password
